@@ -118,17 +118,17 @@ pre {
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
-  /* max-width: 100%; */
-  /* border: 10px solid red;
+  max-width: 100%;
+  /* border: 10px solid red; */
   border-left: 5px solid blue;
-  border-inline-start: 5px solid white;
+  /* border-inline-start: 5px solid white;
   border-block-start: 20px solid pink;
-  border-inline-end: 5px solid green;
+  border-inline-end: 5px solid green; */
   border-block-start-color: blue;
   border: 10px solid #5551FF;
   box-shadow: -10px 10px 0 0 #ABBAF6;
-  margin-block-end: 40px;
-  border-radius: 50%; */
+  /* margin-block-end: 30px; */
+  /* border-radius: 50%;  */
 }
 
 p {
