@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles-physical.css">
+    <link rel="stylesheet" href="./css/styles-c.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,17 +40,25 @@
     <div class="header">
         <div class="wrapper">
             <div class="header-content">
+                <h1>
+                    Curso esencial de HTML y CSS
+                </h1>
+                <p>
+                    Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la
+                    creación de
+                    contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.
+                </p>
                 <header>
                     <div class="header-2">
                         <p>VARIANTES DEL PROYECTO</p>
                         <li class="header-menu">
-                            <a href="index.html" class="template">Nemium A</a>
+                            <a href="index.html">Nemium A</a>
                         </li>
                         <li class="header-menu">
                             <a href="indexb.html">Nemium B</a>
                         </li>
                         <li class="header-menu">
-                            <a href="indexc.html">Nemium C</a>
+                            <a href="indexc.html" class="template">Nemium C</a>
                         </li>
                         <li class="header-menu">
                             <a href="indexd.html">Nemium D</a>
@@ -61,69 +69,69 @@
                     </div>
                     <p>CONTENIDO</p>
                     <nav>
-                        <details open>
-                            <summary>
-                                Setup
-                            </summary>
-                            <ol>
-                                <li>
-                                    <a href="#google-chrome">
-                                        Google Chrome
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#vsc">
-                                        Visual Studio Code
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#figma">
-                                        Figma
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#git">
-                                        GitHub
-                                    </a>
-                                </li>
-                            </ol>
+
+                        <summary>
+                            Setup
+                        </summary>
+                        <ol>
+                            <li>
+                                <a href="#google-chrome">
+                                    Google Chrome
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#vsc">
+                                    Visual Studio Code
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#figma">
+                                    Figma
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#git">
+                                    GitHub
+                                </a>
+                            </li>
+                        </ol>
                         </details>
-                        <details open>
-                            <summary>
-                                Conceptos esenciales del Desarrollo Web
-                            </summary>
-                            <ol>
-                                <li>
-                                    <a href="#html">
-                                        Qué es HTML
-                                </li>
-                                </a>
-                                <li>
-                                    <a href="#etiquetas">
-                                        Etiquetas
-                                </li>
-                                </a>
-                                <li>
-                                    <a href="#dom">
-                                        Dom
-                                </li>
-                                </a>
-                                <li>
-                                    <a href="#sem">
-                                        Semántica
-                                </li>
-                                </a>
-                                <li>
-                                    <a href="#atributos">
-                                        Atributos
-                                </li>
-                                </a>
-                                <li>
-                                    <a href="#css">
-                                        Qué es CSS
-                                </li>
-                                </a>
-                            </ol>
+
+                        <summary>
+                            Conceptos esenciales del Desarrollo Web
+                        </summary>
+                        <ol>
+                            <li>
+                                <a href="#html">
+                                    Qué es HTML
+                            </li>
+                            </a>
+                            <li>
+                                <a href="#etiquetas">
+                                    Etiquetas
+                            </li>
+                            </a>
+                            <li>
+                                <a href="#dom">
+                                    Dom
+                            </li>
+                            </a>
+                            <li>
+                                <a href="#sem">
+                                    Semántica
+                            </li>
+                            </a>
+                            <li>
+                                <a href="#atributos">
+                                    Atributos
+                            </li>
+                            </a>
+                            <li>
+                                <a href="#css">
+                                    Qué es CSS
+                            </li>
+                            </a>
+                        </ol>
                         </details>
                     </nav>
                 </header>
@@ -133,17 +141,9 @@
     <main class="main">
         <div class="wrapper">
             <div class="main-content">
-                <h1>
-                    Curso esencial de HTML y CSS
-                </h1>
-                <p>
-                    Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la
-                    creación de
-                    contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.
-                </p>
                 <hr>
                 <section class="section-content">
-                    <h2>
+                    <h2 class="setup-falso">
                         Setup
                     </h2>
                     <img src="./Images/Google-Chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
@@ -187,7 +187,6 @@
                         </p>
                     </blockquote>
                 </section>
-                <hr>
                 <section class="section-content">
 
                     <h2>Conceptos esenciales del Desarrollo Web</h2>
@@ -210,7 +209,7 @@
  &lt;/body&gt;
  &lt;/html&gt;
  </pre>
-                    <h3 id="etiquetas">Etiquetas</h3>
+                    <h3 id="etiquetas" class="etiqueta">Etiquetas</h3>
                     <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro
                         website y
                         cada una tiene características y usos diferentes aunque visualmente den un resultado similar.
@@ -222,7 +221,7 @@
                         inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las
                         más
                         importantes y que serán parte de tu día a día como Software Developer.</p>
-                    <h3 id="dom">DOM</h3>
+                    <h3 id="dom" class="domm">DOM</h3>
                     <P>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web
                         como si
                         un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos
@@ -230,7 +229,8 @@
                         anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro
                         proyecto.
                     </P>
-                    <img src="Images/dom.png" alt="Estrutura de árbol que representará al Document Object Model ">
+                    <img class="test" src="Images/dom.png"
+                        alt="Estrutura de árbol que representará al Document Object Model ">
                     <h3 id="sem">Semántica</h3>
                     <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será
                         meramente
@@ -256,40 +256,45 @@
                     <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos
                         utilizado
                         para describir la presentación de documentos HTML</p>
-                    <img src="Images/CSS.png" alt="Propiedades de CSS">
+                    <img class="test2" src="Images/CSS.png" alt="Propiedades de CSS">
                 </section>
                 <section class="section-content">
-                    <h2>Modelo de caja</h2>
-                    <h3>El modelo de caja está compuesto por:</h3>
-                    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos
-                        estándares
-                        y
-                        herramientas de desarrollo avanzadas y de amigable uso.</p>
-                    <ol>
-                        <li>Tamaño del del contenido / ancho y alto</li>
-                        <li>Padding / Relleno </li>
-                        <li>Border / Bordes </li>
-                        <li>Margin / Márgenes</li>
-                    </ol>
-                    <h3>Propiedades Fisicas para el modelo de caja</h3>
-                    <ul>
-                        <li>width / height</li>
-                        <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-                        <li>border / border-top | border-right | border-bottom | border-left</li>
-                        <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-                    </ul>
+                    <section class="section2">
 
-                    <h3>Propiedades lógicas para el modelo de caja:</h3>
-                    <ul>
-                        <li>inline-size / block-size</li>
-                        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start |
-                            margin-inline-end</li>
-                        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start |
-                            border-inline-end</li>
-                        <li>padding-block | padding-inline | padding-block-start | padding-block-end |
-                            padding-inline-start
-                            |
-                            padding-inline-end</li>
+                        <h2>Modelo de caja</h2>
+                        <h3>El modelo de caja está compuesto por:</h3>
+                        <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos
+                            estándares
+                            y
+                            herramientas de desarrollo avanzadas y de amigable uso.</p>
+                        <ol>
+                            <li>Tamaño del del contenido / ancho y alto</li>
+                            <li>Padding / Relleno </li>
+                            <li>Border / Bordes </li>
+                            <li>Margin / Márgenes</li>
+                        </ol>
+                        <h3>Propiedades Fisicas para el modelo de caja</h3>
+                        <ul>
+                            <li>width / height</li>
+                            <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+                            <li>border / border-top | border-right | border-bottom | border-left</li>
+                            <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+                        </ul>
+
+                        <h3>Propiedades lógicas para el modelo de caja:</h3>
+                        <ul>
+                            <li>inline-size / block-size</li>
+                            <li>margin-block | margin-inline | margin-block-start | margin-block-end |
+                                margin-inline-start |
+                                margin-inline-end</li>
+                            <li>border-block | border-inline | border-block-start | border-block-end |
+                                border-inline-start |
+                                border-inline-end</li>
+                            <li>padding-block | padding-inline | padding-block-start | padding-block-end |
+                                padding-inline-start
+                                |
+                                padding-inline-end</li>
+                    </section>
                     </ul>
                 </section>
                 <div class="section-content">

@@ -26,6 +26,10 @@
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 18px;
   --white30: white;
@@ -55,7 +59,6 @@ a {
 
 header {
   margin-block-start: 20px;
-  /*--white10: red;*/
   font-size: 14px;
   color: var(--white);
   /* position: absolute; */
@@ -75,6 +78,10 @@ header li {
   margin-block-end: 16px;
 }
 
+.pruebas {
+  display: none;
+}
+
 header a {
   color: var(--white20);
   text-decoration: none;
@@ -84,8 +91,19 @@ header a:hover {
   color: var(--white30);
 }
 
+header p {
+  /* color: var(--white); */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 nav details summary {
   font-weight: bold;
+}
+
+.nav {
+  display: block;
 }
 
 hr {
@@ -93,17 +111,42 @@ hr {
   border-color: rgba(97, 97, 97, 0.20);
 }
 
+.header-2 p {
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.header-menu {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  color: var(--white20);
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.header-2 li:nth-of-type(2) {
+  background: #000000;
+  border-radius: 4px;
+}
+
+.template {
+  color: white;
+}
+
 h1 {
   font-size: 40px;
-  /* font-weight: normal; */
+  font-weight: 400;
   /*font-size: 3.75;*/
   margin-block-start: 20px;
   margin-block-end: 16px;
 }
 
 h2 {
-  font-size: 2em;
-  /* font-weight: normal; */
+  font-size: 24px;
+  font-weight: 400;
   margin-block: 40px;
 }
 
@@ -120,13 +163,13 @@ pre {
   border-radius: 8px;
   max-width: 100%;
   /* border: 10px solid red; */
-  border-left: 5px solid blue;
+  /* border-left: 5px solid blue; */
   /* border-inline-start: 5px solid white;
   border-block-start: 20px solid pink;
   border-inline-end: 5px solid green; */
-  border-block-start-color: blue;
+  /* border-block-start-color: blue;
   border: 10px solid #5551FF;
-  box-shadow: -10px 10px 0 0 #ABBAF6;
+  box-shadow: -10px 10px 0 0 #ABBAF6; */
   /* margin-block-end: 30px; */
   /* border-radius: 50%;  */
 }
@@ -171,21 +214,25 @@ p {
 } */
 
 blockquote {
-  margin-block-start: 80px;
-  margin-block-end: 63px;
+  margin: 40px 0 40px;
   background-color: var(--white10);
   border-radius: 8px;
   line-height: 24px;
   font-size: 24px;
   /* padding: 24px; */
-  padding-inline-end: 24px;
-  padding-inline-start: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+  text-align: left;
 }
 
 blockquote p {
   color: var(--white30)
+}
+
+blockquote span::before {
+  content: '-';
 }
 
 .main hr {
@@ -214,7 +261,7 @@ blockquote p {
 .slider-container {
   /* block-size: 100px; */
   display: block;
-  overflow: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
   white-space: nowrap;
   font-size: 0;
@@ -271,26 +318,125 @@ blockquote p {
     block-size: 350px;
   }
 
+  .pruebas {
+    display: block;
+  }
+
   .header {
     position: sticky;
     inset-block-start: -45px;
   }
 
+  .header-2 {
+    margin-block-end: 88px;
+  }
+
+  .header-2 p {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin-block-end: 16px;
+  }
+
+  blockquote {
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    background-color: var(--white10);
+    border-radius: 8px;
+    line-height: 24px;
+    font-size: 24px;
+    padding-inline-end: 24px;
+    padding-inline-start: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+
+  .header-menu {
+    list-style: none;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: var(--white20);
+    line-height: 24px;
+    padding-inline: 8px;
+    padding-block: 0;
+    font-weight: 500;
+  }
+
+  /* .tittle-header {
+    padding-block-start: 30px;
+  } */
+
+  .header-2 li:nth-of-type(2) {
+    background: #000000;
+    border-radius: 4px;
+  }
+
   .header-content {
     position: relative;
-    inset-block-start: 65px;
+    inset-block-start: 44px;
     padding-inline: 0;
   }
 
   header {
     position: absolute;
     inset-block-start: 0;
-    inset-inline-start: -208px;
+    inset-inline-start: -258px;
     inline-size: 188px;
+    block-size: 306px;
+  }
+
+  /* .template {
+    color: var(--white20);
+  } */
+
+  .template:hover {
+    color: var(--white30);
+  }
+
+  header p {
+    color: var(--white30);
+    margin: 0px 0px 16px;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 64px;
+    font-weight: 700;
     margin-block-start: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-block: 16px;
+  }
+
+  .footer {
+    background: var(--white30);
+    height: 174px;
+
+  }
+
+  .title-footer {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: 400;
+    color: #251F24;
+    padding-block-start: 48px;
+  }
+
+  .footer-contact {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-link {
+    padding-inline-end: 16px;
   }
 }
