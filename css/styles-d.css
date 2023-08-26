@@ -472,6 +472,11 @@ scroll-page .slider-content {
     block-size: 350px;
   }
 
+  .header {
+    position: sticky;
+    margin-top: 64px;
+  }
+
   .summary-title {
     color: var(--gray20);
   }
@@ -523,7 +528,7 @@ scroll-page .slider-content {
   }
 
   .header-content {
-    position: relative;
+    position: absolute;
     /* inset-block-start: 64px; */
     padding-inline: 0;
   }
