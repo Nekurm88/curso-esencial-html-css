@@ -361,11 +361,11 @@ blockquote span::before {
 }
 
 .alineado {
-  text-align: center;
+  text-align: left;
 }
 
 .alineado img {
-  margin: 40px 131px 16px;
+  margin: 40px 0 16px;
 }
 
 @media screen and (min-width: 1366px) {
@@ -375,6 +375,10 @@ blockquote span::before {
 
   .main-content {
     margin-block-start: 0px;
+  }
+
+  .alineado img {
+    margin: 40px 0 16px;
   }
 
   P {
